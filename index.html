@@ -1,0 +1,1528 @@
+<!-- ===================== -->
+<!-- PERFORMANCE & FONTS -->
+<!-- ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+/* ========== MAIN WRAPPER ========== */
+.pvp-page {
+font-family: 'Open Sans', Arial, sans-serif;
+font-size: 16px;
+line-height: 1.6;
+color: #404040;
+background: #FAFAFA;
+-webkit-font-smoothing: antialiased;
+margin: 0;
+padding: 0;
+}
+.pvp-page *,
+.pvp-page *::before,
+.pvp-page *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+.pvp-page img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+.pvp-page a {
+text-decoration: none;
+color: inherit;
+transition: color 0.3s ease;
+}
+.pvp-page ul,
+.pvp-page li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.pvp-page h1,
+.pvp-page h2,
+.pvp-page h3,
+.pvp-page h4 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+color: #001F47;
+line-height: 1.3;
+margin: 0;
+padding: 0;
+}
+.pvp-page h1 { font-size: clamp(1.5rem, 5vw, 2.5rem); }
+.pvp-page h2 { font-size: clamp(1.3rem, 4vw, 2rem); color: #0066CC; }
+.pvp-page h3 { font-size: clamp(1.1rem, 3vw, 1.4rem); }
+.pvp-page p {
+margin: 0 0 12px 0;
+padding: 0;
+color: #404040;
+}
+.pvp-page address { font-style: normal; }
+.pvp-page .container {
+width: 100%;
+max-width: 1400px;
+padding: 0 15px;
+margin: 0 auto;
+}
+.pvp-page .section-padding { padding: 40px 0; }
+/* ========== ICONS FIX ========== */
+.pvp-page i,
+.pvp-page .fas,
+.pvp-page .fab,
+.pvp-page .fa {
+font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands', FontAwesome !important;
+font-style: normal;
+display: inline-block;
+}
+.pvp-page .fas { font-weight: 900; }
+.pvp-page .fab { font-weight: 400; }
+/* ========== BUTTONS ========== */
+.pvp-page .btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+background: #FFD700;
+color: #001F47;
+padding: 12px 24px;
+border-radius: 8px;
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+font-size: 0.95rem;
+text-transform: uppercase;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+text-align: center;
+white-space: nowrap;
+text-decoration: none;
+}
+.pvp-page .btn:hover {
+background: #E6C200;
+transform: translateY(-2px);
+box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+color: #001F47;
+}
+.pvp-page .btn i { font-size: 1rem; }
+.pvp-page .btn-outline {
+background: transparent;
+border: 2px solid rgba(255,255,255,0.6);
+color: #FFFFFF;
+}
+.pvp-page .btn-outline:hover {
+background: #FFD700;
+border-color: #FFD700;
+color: #001F47;
+}
+/* ========== TOP BAR ========== */
+.pvp-page .top-bar {
+display: none;
+background: #001F47;
+color: #CCCCCC;
+font-size: 0.85rem;
+padding: 10px 0;
+border-bottom: 3px solid #FFD700;
+}
+.pvp-page .top-bar .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 10px;
+}
+.pvp-page .top-info {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.pvp-page .top-info span {
+display: inline-flex;
+align-items: center;
+color: #CCCCCC;
+}
+.pvp-page .top-info i {
+color: #FFD700;
+margin-right: 8px;
+font-size: 0.9rem;
+}
+.pvp-page .top-info a { color: #CCCCCC; }
+.pvp-page .top-info a:hover { color: #FFD700; }
+.pvp-page .social-icons {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.pvp-page .social-icons > span {
+margin-right: 8px;
+font-weight: 600;
+color: #CCCCCC;
+}
+.pvp-page .social-icons a {
+width: 32px;
+height: 32px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #CCCCCC;
+border-radius: 50%;
+transition: all 0.3s ease;
+font-size: 0.9rem;
+}
+.pvp-page .social-icons a:hover {
+background: #FFD700;
+color: #001F47;
+}
+.pvp-page .social-icons .bbb-icon {
+font-size: 0.65rem;
+font-weight: 800;
+font-family: 'Montserrat', sans-serif;
+letter-spacing: -1px;
+}
+/* ========== NAVIGATION ========== */
+.pvp-page .main-nav {
+background: #FFFFFF;
+box-shadow: 0 2px 10px rgba(0,31,71,0.1);
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+.pvp-page .nav-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 15px;
+max-width: 1400px;
+margin: 0 auto;
+}
+.pvp-page .logo img { max-height: 50px; width: auto; }
+.pvp-page .nav-cta-mobile {
+display: flex;
+gap: 8px;
+align-items: center;
+}
+.pvp-page .nav-cta-mobile .btn { padding: 10px 16px; font-size: 0.85rem; }
+.pvp-page .nav-cta-mobile .btn i { font-size: 1rem; margin: 0; }
+.pvp-page .nav-menu {
+display: none;
+position: fixed;
+top: 0; left: 0;
+width: 100%;
+height: 100vh;
+background: #FFFFFF;
+flex-direction: column;
+padding: 70px 20px 20px;
+overflow-y: auto;
+z-index: 999;
+margin: 0;
+}
+.pvp-page .nav-menu.active { display: flex; }
+.pvp-page .nav-item {
+width: 100%;
+border-bottom: 1px solid #DDDDDD;
+}
+.pvp-page .nav-item > a {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 0;
+font-weight: 600;
+color: #001F47;
+font-size: 1rem;
+}
+.pvp-page .nav-item > a.active { color: #0066CC; }
+.pvp-page .nav-item > a i {
+font-size: 0.8rem;
+transition: transform 0.3s;
+color: #001F47;
+}
+.pvp-page .nav-item.active-dropdown > a i { transform: rotate(180deg); }
+.pvp-page .dropdown {
+display: none;
+padding-left: 15px;
+padding-bottom: 10px;
+}
+.pvp-page .nav-item.active-dropdown .dropdown { display: block; }
+.pvp-page .dropdown li { width: 100%; }
+.pvp-page .dropdown li a {
+display: block;
+padding: 10px 0;
+font-size: 0.9rem;
+color: #404040;
+border-bottom: 1px dashed #DDDDDD;
+}
+.pvp-page .dropdown li:last-child a { border-bottom: none; }
+.pvp-page .dropdown li a:hover { color: #0066CC; }
+.pvp-page .nav-cta-section {
+margin-top: auto;
+padding-top: 20px;
+border-top: 2px solid #FFD700;
+}
+.pvp-page .nav-cta-section .btn { width: 100%; padding: 14px; font-size: 1rem; }
+.pvp-page .mobile-toggle {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+cursor: pointer;
+color: #001F47;
+background: none;
+border: none;
+z-index: 1001;
+position: relative;
+}
+.pvp-page .mobile-toggle i { font-size: 1.5rem; color: #001F47; }
+.pvp-page .nav-cta-desktop { display: none; }
+/* ========== HERO ========== */
+.pvp-page .hero-home {
+padding: 30px 0 40px;
+background: linear-gradient(135deg, #001F47 0%, #002d5c 100%);
+color: #FFFFFF;
+position: relative;
+}
+.pvp-page .hero-home::before {
+content: '';
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background: url('https://i.postimg.cc/jdFtLb2b/PURE-VALLEY-PLUMBING-LOGO.webp') center/cover no-repeat;
+opacity: 0.08;
+pointer-events: none;
+}
+.pvp-page .hero-home .container { position: relative; z-index: 2; }
+.pvp-page .hero-grid {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.pvp-page .hero-content h1 { color: #FFFFFF; margin-bottom: 10px; }
+.pvp-page .hero-subtitle {
+font-size: 1rem;
+color: #FFD700;
+margin-bottom: 15px;
+font-weight: 600;
+}
+.pvp-page .hero-content > p {
+color: rgba(255,255,255,0.85);
+font-size: 0.95rem;
+line-height: 1.7;
+margin-bottom: 20px;
+}
+.pvp-page .hero-badge-wrap {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-bottom: 22px;
+}
+.pvp-page .h-badge {
+display: inline-flex;
+align-items: center;
+gap: 7px;
+background: rgba(255,215,0,0.15);
+border: 1px solid rgba(255,215,0,0.4);
+border-radius: 50px;
+padding: 6px 14px;
+font-size: 0.82rem;
+color: #FFD700;
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+}
+.pvp-page .h-badge i { font-size: 0.85rem; }
+.pvp-page .hero-action-row {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+.pvp-page .hero-form {
+background: #FFFFFF;
+border-radius: 8px;
+padding: 20px 15px;
+box-shadow: 0 8px 30px rgba(0,31,71,0.15);
+border-top: 4px solid #FFD700;
+}
+.pvp-page .hero-form h3 {
+text-align: center;
+margin-bottom: 15px;
+color: #001F47;
+font-size: 1.1rem;
+}
+.pvp-page .hero-form iframe {
+width: 100%;
+min-height: 400px;
+border: none;
+display: block;
+}
+/* ========== SIGNAL STRIP ========== */
+.pvp-page .signal-strip {
+background: #0066CC;
+padding: 14px 0;
+}
+.pvp-page .signal-strip .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 16px;
+}
+.pvp-page .signal-item {
+display: flex;
+align-items: center;
+gap: 7px;
+color: #FFFFFF;
+font-size: 0.84rem;
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+}
+.pvp-page .signal-item i { color: #FFD700; font-size: 0.95rem; }
+/* ========== SERVICES GRID ========== */
+.pvp-page .services-grid-section { background: #F5F7FA; }
+.pvp-page .services-grid-section h2 { text-align: center; margin-bottom: 10px; }
+.pvp-page .section-intro {
+text-align: center;
+max-width: 740px;
+margin: 0 auto 30px;
+font-size: 0.95rem;
+color: #404040;
+}
+.pvp-page .services-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 15px;
+}
+.pvp-page .service-card {
+background: #FFFFFF;
+border-radius: 8px;
+padding: 15px;
+box-shadow: 0 2px 10px rgba(0,31,71,0.1);
+transition: all 0.3s ease;
+border-left: 4px solid #0066CC;
+}
+.pvp-page .service-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 30px rgba(0,31,71,0.15);
+border-left-color: #FFD700;
+}
+.pvp-page .service-card a {
+display: flex;
+align-items: center;
+gap: 12px;
+color: #001F47;
+font-weight: 600;
+font-size: 0.95rem;
+}
+.pvp-page .service-card i {
+color: #0066CC;
+font-size: 1.2rem;
+flex-shrink: 0;
+width: 24px;
+text-align: center;
+}
+.pvp-page .service-card:hover a { color: #0066CC; }
+.pvp-page .service-card:hover i { color: #FFD700; }
+/* ========== HIGHLIGHT CARDS ========== */
+.pvp-page .highlight-section { background: #FFFFFF; }
+.pvp-page .highlight-section h2 { text-align: center; margin-bottom: 10px; }
+.pvp-page .highlight-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 18px;
+margin-top: 28px;
+}
+.pvp-page .highlight-card {
+background: #F5F7FA;
+border-radius: 8px;
+padding: 26px 20px;
+border-top: 4px solid #0066CC;
+transition: all 0.3s ease;
+position: relative;
+overflow: hidden;
+}
+.pvp-page .highlight-card::after {
+content: '';
+position: absolute;
+bottom: 0; right: 0;
+width: 60px; height: 60px;
+background: rgba(0,102,204,0.05);
+border-radius: 50% 0 0 0;
+}
+.pvp-page .highlight-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 10px 28px rgba(0,31,71,0.12);
+border-top-color: #FFD700;
+}
+.pvp-page .hl-icon-wrap {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 12px;
+}
+.pvp-page .hl-icon {
+width: 44px;
+height: 44px;
+background: linear-gradient(135deg, #001F47, #0066CC);
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+.pvp-page .hl-icon i { color: #FFD700; font-size: 1.1rem; }
+.pvp-page .highlight-card h3 { font-size: 1rem; color: #001F47; margin: 0; }
+.pvp-page .highlight-card p { font-size: 0.88rem; color: #404040; margin: 0; line-height: 1.65; }
+/* ========== AREAS SECTION ========== */
+.pvp-page .areas-section { background: #F5F7FA; }
+.pvp-page .areas-section h2 { text-align: center; margin-bottom: 10px; }
+.pvp-page .areas-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+margin-top: 25px;
+}
+.pvp-page .area-pill {
+display: flex;
+align-items: center;
+gap: 8px;
+background: #FFFFFF;
+padding: 12px 14px;
+border-radius: 8px;
+font-size: 0.88rem;
+font-weight: 600;
+color: #001F47;
+border: 1px solid #DDDDDD;
+transition: all 0.3s ease;
+}
+.pvp-page .area-pill i {
+color: #0066CC;
+font-size: 0.8rem;
+flex-shrink: 0;
+}
+.pvp-page .area-pill:hover {
+background: #001F47;
+color: #FFD700;
+border-color: #001F47;
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0,31,71,0.18);
+}
+.pvp-page .area-pill:hover i { color: #FFD700; }
+/* ========== URGENCY BANNER ========== */
+.pvp-page .urgency-banner {
+background: linear-gradient(135deg, #001F47 0%, #002d5c 100%);
+text-align: center;
+}
+.pvp-page .urgency-banner h2 { color: #FFD700; margin-bottom: 10px; }
+.pvp-page .urgency-banner > .container > p {
+color: rgba(255,255,255,0.88);
+max-width: 680px;
+margin: 0 auto 22px;
+font-size: 0.95rem;
+}
+.pvp-page .urgency-counter-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 22px;
+margin-bottom: 28px;
+}
+.pvp-page .urgency-block {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+min-width: 100px;
+}
+.pvp-page .u-val {
+font-family: 'Montserrat', sans-serif;
+font-size: 2.2rem;
+font-weight: 800;
+color: #FFD700;
+line-height: 1;
+}
+.pvp-page .u-label {
+font-size: 0.78rem;
+color: rgba(255,255,255,0.75);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+text-align: center;
+}
+/* ========== FAQ SECTION ========== */
+.pvp-page .faq-section { background: #FFFFFF; }
+.pvp-page .faq-section h2 { text-align: center; margin-bottom: 10px; }
+.pvp-page .faq-list {
+max-width: 860px;
+margin: 25px auto 0;
+}
+.pvp-page .faq-item {
+background: #F5F7FA;
+border-radius: 8px;
+margin-bottom: 12px;
+overflow: hidden;
+border: 1px solid #DDDDDD;
+}
+.pvp-page .faq-question {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 20px;
+cursor: pointer;
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+font-size: 0.95rem;
+color: #001F47;
+background: #F5F7FA;
+border: none;
+width: 100%;
+text-align: left;
+transition: background 0.3s ease;
+gap: 15px;
+}
+.pvp-page .faq-question:hover { background: #FFFFFF; }
+.pvp-page .faq-question i {
+color: #0066CC;
+font-size: 0.85rem;
+transition: transform 0.3s ease;
+flex-shrink: 0;
+}
+.pvp-page .faq-item.active .faq-question { background: #FFFFFF; color: #0066CC; }
+.pvp-page .faq-item.active .faq-question i { transform: rotate(180deg); color: #FFD700; }
+.pvp-page .faq-answer {
+display: none;
+padding: 0 20px 18px;
+font-size: 0.9rem;
+color: #404040;
+line-height: 1.7;
+background: #FFFFFF;
+}
+.pvp-page .faq-item.active .faq-answer { display: block; }
+.pvp-page .faq-answer a { color: #0066CC; font-weight: 600; }
+.pvp-page .faq-answer a:hover { color: #001F47; }
+/* ========== CONTACT CTA SECTION ========== */
+.pvp-page .contact-cta-section {
+background: linear-gradient(135deg, #0066CC 0%, #004d99 100%);
+color: #FFFFFF;
+}
+.pvp-page .contact-cta-grid {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.pvp-page .contact-cta-content h2 { color: #FFFFFF; margin-bottom: 10px; }
+.pvp-page .contact-cta-content > p {
+color: rgba(255,255,255,0.95);
+font-size: 0.95rem;
+margin-bottom: 15px;
+}
+.pvp-page .contact-details-list { margin: 0; padding: 0; }
+.pvp-page .contact-details-list li {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 10px 0;
+color: #FFFFFF;
+font-size: 0.9rem;
+}
+.pvp-page .contact-details-list li i {
+background: rgba(255,255,255,0.2);
+padding: 10px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+color: #FFD700;
+font-size: 1rem;
+}
+.pvp-page .contact-details-list li a { color: #FFFFFF; word-break: break-word; }
+.pvp-page .contact-details-list li a:hover { color: #FFD700; }
+.pvp-page .contact-cta-content .btn { background: #FFD700; color: #001F47; margin-top: 15px; }
+.pvp-page .contact-cta-content .btn:hover { background: #E6C200; }
+.pvp-page .contact-cta-form {
+background: #FFFFFF;
+border-radius: 8px;
+padding: 20px 15px;
+box-shadow: 0 8px 30px rgba(0,31,71,0.15);
+border-top: 4px solid #FFD700;
+}
+.pvp-page .contact-cta-form h3 {
+text-align: center;
+margin-bottom: 15px;
+font-size: 1.1rem;
+color: #001F47;
+}
+.pvp-page .contact-cta-form iframe {
+width: 100%;
+min-height: 400px;
+border: none;
+display: block;
+}
+/* ========== FOOTER ========== */
+.pvp-page .pvp-footer {
+background: #001F47;
+color: #FFFFFF;
+padding: 40px 0 100px;
+}
+.pvp-page .footer-grid {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.pvp-page .footer-col h3 {
+font-size: 1rem;
+border-bottom: 2px solid #FFD700;
+padding-bottom: 10px;
+margin-bottom: 15px;
+display: inline-block;
+color: #FFFFFF;
+}
+.pvp-page .footer-logo-img {
+background: #FFFFFF;
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 15px;
+max-width: 140px;
+display: inline-block;
+}
+.pvp-page .footer-col > p { color: #CCCCCC; font-size: 0.9rem; line-height: 1.6; }
+.pvp-page .footer-links {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 8px;
+margin: 0;
+padding: 0;
+}
+.pvp-page .footer-links li { margin-bottom: 0; }
+.pvp-page .footer-links a {
+color: #CCCCCC;
+font-size: 0.9rem;
+display: block;
+padding: 5px 0;
+transition: color 0.3s ease, padding-left 0.3s ease;
+}
+.pvp-page .footer-links a:hover { color: #FFD700; padding-left: 5px; }
+.pvp-page .footer-contact { margin: 0; padding: 0; }
+.pvp-page .footer-contact p {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+margin-bottom: 10px;
+font-size: 0.9rem;
+color: #CCCCCC;
+}
+.pvp-page .footer-contact i {
+color: #FFD700;
+margin-top: 3px;
+flex-shrink: 0;
+font-size: 0.9rem;
+width: 16px;
+}
+.pvp-page .footer-contact a { color: #FFD700; word-break: break-word; transition: color 0.3s ease; }
+.pvp-page .footer-contact a:hover { color: #E6C200; }
+.pvp-page .copyright {
+border-top: 1px solid rgba(255,255,255,0.1);
+padding-top: 20px;
+margin-top: 30px;
+text-align: center;
+font-size: 0.8rem;
+color: rgba(255,255,255,0.6);
+}
+.pvp-page .copyright p { color: rgba(255,255,255,0.6); margin: 0; }
+/* ========== MOBILE CALL BUTTON ========== */
+.pvp-page .mobile-call-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 0; left: 0;
+width: 100%;
+background: linear-gradient(135deg, #FFD700 0%, #E6C200 100%);
+color: #001F47;
+padding: 14px;
+font-weight: 700;
+font-size: 1rem;
+z-index: 9998;
+box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+gap: 10px;
+text-decoration: none;
+}
+.pvp-page .mobile-call-btn:hover {
+background: linear-gradient(135deg, #E6C200 0%, #ccaa00 100%);
+color: #001F47;
+}
+.pvp-page .mobile-call-btn i { animation: pvp-ring 1s infinite; font-size: 1.1rem; }
+@keyframes pvp-ring {
+0%, 100% { transform: rotate(0); }
+25% { transform: rotate(-10deg); }
+75% { transform: rotate(10deg); }
+}
+/* ========== POPUP ========== */
+.pvp-page .popup-overlay {
+display: none;
+position: fixed;
+top: 0; left: 0; right: 0; bottom: 0;
+width: 100%; height: 100%;
+background: rgba(0,0,0,0.85);
+z-index: 999999;
+align-items: center;
+justify-content: center;
+padding: 15px;
+}
+.pvp-page .popup-overlay.active { display: flex !important; }
+.pvp-page .popup-box {
+background: #FFFFFF;
+border-radius: 12px;
+max-width: 300px;
+width: 100%;
+text-align: center;
+overflow: visible;
+box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+position: relative;
+animation: pvp-popupSlide 0.3s ease;
+}
+@keyframes pvp-popupSlide {
+from { opacity: 0; transform: scale(0.9) translateY(-20px); }
+to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.pvp-page .popup-close {
+position: absolute;
+top: -12px; right: -12px;
+width: 36px; height: 36px;
+background: #001F47;
+border: 3px solid #FFFFFF;
+border-radius: 50%;
+cursor: pointer;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10;
+transition: background 0.3s ease;
+padding: 0;
+}
+.pvp-page .popup-close:hover { background: #0066CC; }
+.pvp-page .popup-close i { font-size: 0.9rem; color: #FFFFFF; }
+.pvp-page .popup-header {
+background: linear-gradient(135deg, #0066CC 0%, #004d99 100%);
+color: #FFFFFF;
+padding: 25px 20px;
+border-radius: 12px 12px 0 0;
+}
+.pvp-page .popup-header > i { font-size: 2rem; margin-bottom: 8px; display: block; color: #FFD700; }
+.pvp-page .popup-header h3 { color: #FFFFFF; font-size: 1.2rem; margin: 0; }
+.pvp-page .popup-body { padding: 25px 20px; }
+.pvp-page .popup-body .btn { width: 100%; padding: 14px; font-size: 1rem; background: #FFD700; color: #001F47; }
+.pvp-page .popup-body .btn:hover { background: #E6C200; }
+.pvp-page .popup-phone {
+display: block;
+margin-top: 12px;
+font-size: 1.2rem;
+font-weight: 700;
+color: #001F47;
+transition: color 0.3s ease;
+text-decoration: none;
+}
+.pvp-page .popup-phone:hover { color: #0066CC; }
+/* ========== TABLET (600px+) ========== */
+@media (min-width: 600px) {
+.pvp-page .container { padding: 0 20px; }
+.pvp-page .section-padding { padding: 50px 0; }
+.pvp-page .hero-home { padding: 50px 0; }
+.pvp-page .hero-form { padding: 25px; }
+.pvp-page .services-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.pvp-page .highlight-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.pvp-page .areas-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.pvp-page .contact-cta-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+align-items: center;
+}
+.pvp-page .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.pvp-page .footer-links { grid-template-columns: 1fr; }
+}
+/* ========== DESKTOP (992px+) ========== */
+@media (min-width: 992px) {
+.pvp-page .container { padding: 0 40px; }
+.pvp-page .section-padding { padding: 80px 0; }
+.pvp-page .top-bar { display: block; }
+.pvp-page .nav-container { padding: 15px 40px; }
+.pvp-page .logo img { max-height: 65px; }
+.pvp-page .mobile-toggle { display: none; }
+.pvp-page .nav-cta-mobile { display: none; }
+.pvp-page .nav-menu {
+display: flex !important;
+position: static;
+width: auto; height: auto;
+background: transparent;
+flex-direction: row;
+padding: 0;
+overflow: visible;
+gap: 30px;
+align-items: center;
+}
+.pvp-page .nav-item { width: auto; border-bottom: none; position: relative; padding: 0; }
+.pvp-page .nav-item > a { padding: 12px 0; gap: 5px; }
+.pvp-page .nav-item:hover > a { color: #0066CC; }
+.pvp-page .nav-item:hover > a i { transform: rotate(180deg); }
+.pvp-page .dropdown {
+display: none;
+position: absolute;
+top: 100%; left: 0;
+background: #FFFFFF;
+min-width: 260px;
+box-shadow: 0 8px 30px rgba(0,31,71,0.15);
+border-top: 3px solid #FFD700;
+padding: 0;
+max-height: 400px;
+overflow-y: auto;
+border-radius: 0 0 8px 8px;
+z-index: 1001;
+}
+.pvp-page .nav-item:hover .dropdown { display: block; }
+.pvp-page .dropdown li a { padding: 12px 18px; border-bottom: 1px solid #DDDDDD; }
+.pvp-page .dropdown li a:hover { background: #F5F7FA; color: #0066CC; padding-left: 22px; }
+.pvp-page .nav-cta-section { display: none; }
+.pvp-page .nav-cta-desktop { display: flex; margin-left: auto; }
+.pvp-page .hero-home { padding: 80px 0; }
+.pvp-page .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.pvp-page .hero-subtitle { font-size: 1.3rem; }
+.pvp-page .hero-content > p { font-size: 1.05rem; }
+.pvp-page .hero-form { padding: 30px; }
+.pvp-page .hero-form h3 { font-size: 1.3rem; }
+.pvp-page .hero-form iframe { min-height: 450px; }
+.pvp-page .services-grid { grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.pvp-page .highlight-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pvp-page .areas-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; }
+.pvp-page .contact-cta-grid { gap: 60px; }
+.pvp-page .contact-cta-form { padding: 35px; }
+.pvp-page .contact-cta-form iframe { min-height: 450px; }
+.pvp-page .pvp-footer { padding: 60px 0 30px; }
+.pvp-page .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 50px; }
+.pvp-page .mobile-call-btn { display: none; }
+}
+/* ========== LARGE DESKTOP (1200px+) ========== */
+@media (min-width: 1200px) {
+.pvp-page .container { max-width: 1400px; }
+.pvp-page .nav-menu { gap: 35px; }
+.pvp-page .hero-grid { gap: 80px; }
+.pvp-page .services-grid { grid-template-columns: repeat(4, 1fr); }
+.pvp-page .areas-grid { grid-template-columns: repeat(5, 1fr); }
+.pvp-page .highlight-grid { grid-template-columns: repeat(3, 1fr); }
+}
+</style>
+<!-- ========== MAIN WRAPPER ========== -->
+<div class="pvp-page">
+<!-- Popup -->
+<div class="popup-overlay" id="pvpPopup">
+<div class="popup-box">
+<button class="popup-close" id="pvpPopupClose" type="button" aria-label="Close popup">
+<i class="fas fa-times"></i>
+</button>
+<div class="popup-header">
+<i class="fas fa-temperature-high"></i>
+<h3>Hot Water or Pipe Problem?</h3>
+</div>
+<div class="popup-body">
+<a href="tel:+19515566555" class="btn"><i class="fas fa-phone"></i> Call Us Now</a>
+<a href="tel:+19515566555" class="popup-phone">(951) 556-6555</a>
+</div>
+</div>
+</div>
+<!-- Top Bar -->
+<div class="top-bar">
+<div class="container">
+<div class="top-info">
+<span><i class="fas fa-map-marker-alt"></i>27130 Eucalyptus Ave, Moreno Valley, CA 92555</span>
+<span><i class="fas fa-award"></i>ENR California Top Specialty Contractor · PHCC Contractor of the Year</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:plumbermorenovalleyca@gmail.com">plumbermorenovalleyca@gmail.com</a></span>
+</div>
+<div class="social-icons">
+<span>Follow Us:</span>
+<a href="https://www.facebook.com/plumbermorenovalley" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/plumbermorenovalley" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://x.com/plumbermoreno" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.pinterest.com/plumbermorenovalley" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+<a href="https://www.youtube.com/@plumbermorenovalley" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="https://www.tiktok.com/@plumbermorenovalley" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.yelp.com/biz/pure-valley-plumbing-moreno-valley" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+<a href="https://www.houzz.com/pro/purevalleyplumbing" target="_blank" rel="noopener noreferrer" aria-label="Houzz"><i class="fab fa-houzz"></i></a>
+<a href="https://www.bbb.org/us/ca/moreno-valley/profile/plumbing-fixtures/pure-valley-plumbing-1126-1000139896" target="_blank" rel="noopener noreferrer" aria-label="BBB"><span class="bbb-icon">BBB</span></a>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<nav class="main-nav" aria-label="Main Navigation">
+<div class="nav-container">
+<a href="https://plumbermorenovalleyca.com/" class="logo">
+<img src="https://i.postimg.cc/jdFtLb2b/PURE-VALLEY-PLUMBING-LOGO.webp" alt="Pure Valley Plumbing — Moreno Valley Plumbing Company" width="150" height="60" loading="eager">
+</a>
+<div class="nav-cta-mobile">
+<a href="tel:+19515566555" class="btn" aria-label="Call Pure Valley Plumbing">
+<i class="fas fa-phone"></i>
+</a>
+<button class="mobile-toggle" id="pvpMobileToggle" type="button" aria-label="Open Menu">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+<ul class="nav-menu" id="pvpNavMenu">
+<li class="nav-item"><a href="https://plumbermorenovalleyca.com/" class="active">Home</a></li>
+<li class="nav-item dropdown-trigger">
+<a href="https://plumbermorenovalleyca.com/services/">Services <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown">
+<li><a href="https://plumbermorenovalleyca.com/services/backflow-testing-repair-replacement/">Backflow Testing</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/boiler-installation-repair-replacement/">Boiler Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/bathroom-remodel/">Bathroom Remodeling</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/bathtub-repair-replacement/">Bathtub Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/drain-cleaning/">Drain Cleaning</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/emergency-plumber/">Emergency Plumber</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/faucets-sinks-repair-replacement/">Faucets &amp; Sinks</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/garbage-disposal/">Garbage Disposal</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/gas-line-installation-repair-replacement/">Gas Line Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/hydro-jetting/">Hydro Jetting</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/pipe-repair-replacement/">Pipe Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/sewer-line-installation-repair-replacement/">Sewer Line Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/slab-leak-detection/">Slab Leak Detection</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/sewer-camera-inspection/">Sewer Camera Inspection</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/septic-tank-pumping/">Septic Tank Pumping</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/shower-repair-replacement/">Shower Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/sump-pump-repair-replacement/">Sump Pump Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/toilet-installation-repair-replacement/">Toilet Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-damage-restoration/">Water Damage Restoration</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-heater-repair-replacement/">Water Heater Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-leak-detection/">Water Leak Detection</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-line-repair/">Water Line Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-filtration-repair-replacement/">Water Filtration</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-softener-repair-replacement/">Water Softeners</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown-trigger">
+<a href="https://plumbermorenovalleyca.com/service-areas/">Service Areas <i class="fas fa-caret-down"></i></a>
+<ul class="dropdown">
+<li><a href="https://plumbermorenovalleyca.com/service-areas/march-air-reserve-base/">March Air Reserve Base</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/loma-linda/">Loma Linda</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/highgrove/">Highgrove</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/mead-valley/">Mead Valley</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/grand-terrace/">Grand Terrace</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/woodcrest/">Woodcrest</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/redlands/">Redlands</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/riverside/">Riverside</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/san-bernardino/">San Bernardino</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/perris/">Perris</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/lakeview/">Lakeview</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/colton/">Colton</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/nuevo/">Nuevo</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/mentone/">Mentone</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/calimesa/">Calimesa</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/rubidoux/">Rubidoux</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/good-hope/">Good Hope</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/yucaipa/">Yucaipa</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/sunnyslope/">Sunnyslope</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="https://plumbermorenovalleyca.com/about/">About</a></li>
+<li class="nav-item"><a href="https://plumbermorenovalleyca.com/blog/">Blog</a></li>
+<li class="nav-item"><a href="https://plumbermorenovalleyca.com/contact/">Contact</a></li>
+<li class="nav-cta-desktop">
+<a href="tel:+19515566555" class="btn">
+<i class="fas fa-phone"></i> (951) 556-6555
+</a>
+</li>
+<li class="nav-cta-section">
+<a href="tel:+19515566555" class="btn">
+<i class="fas fa-phone"></i> Call: (951) 556-6555
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- ========== MAIN CONTENT ========== -->
+<main>
+<!-- Hero -->
+<section class="hero-home">
+<div class="container">
+<div class="hero-grid">
+<div class="hero-content">
+<h1>Fast, Reliable Plumbing for Moreno Valley Homes &amp; Businesses — Backed by 41 Years of Inland Empire Trust</h1>
+<p class="hero-subtitle">Licensed · Insured · Award-Winning · 24/7 Emergency Dispatch · C-36 Certified Since 1984</p>
+<p>When a pipe fails or a water heater quits, you need a plumber who picks up the phone immediately, arrives fully equipped, and completes the job with a warranty you can count on. Pure Valley Plumbing has delivered exactly that to Moreno Valley homeowners and businesses for over four decades — and our five national industry awards confirm it is not just a claim.</p>
+<div class="hero-badge-wrap">
+<span class="h-badge"><i class="fas fa-trophy"></i> 5 National Awards</span>
+<span class="h-badge"><i class="fas fa-clock"></i> 60-Min Arrival</span>
+<span class="h-badge"><i class="fas fa-file-contract"></i> Quote Before Work</span>
+<span class="h-badge"><i class="fas fa-leaf"></i> Green Plumbing Certified</span>
+</div>
+<div class="hero-action-row">
+<a href="tel:+19515566555" class="btn"><i class="fas fa-phone"></i> Call (951) 556-6555</a>
+<a href="https://plumbermorenovalleyca.com/services/emergency-plumber/" class="btn btn-outline"><i class="fas fa-exclamation"></i> Emergency Line</a>
+</div>
+</div>
+<div class="hero-form">
+<h3>Request a Plumber Today</h3>
+<iframe src="https://leads.leadsmartinc.com/?api_key=eb7353a561f876a7c03543787a0cd05ac8a926d3&affiliate_source=2mhnfdbill1&funnel=3&category=1&step=1&buttons=btn-danger" title="Request a Plumber — Pure Valley Plumbing Moreno Valley" loading="lazy"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Signal Strip -->
+<div class="signal-strip">
+<div class="container">
+<div class="signal-item"><i class="fas fa-id-card"></i> CA C-36 Licensed</div>
+<div class="signal-item"><i class="fas fa-shield-alt"></i> Bonded &amp; Insured</div>
+<div class="signal-item"><i class="fas fa-clock"></i> 24/7 — Always Open</div>
+<div class="signal-item"><i class="fas fa-van-shuttle"></i> 5-Van Fleet Ready</div>
+<div class="signal-item"><i class="fas fa-medal"></i> 41-Year Legacy</div>
+<div class="signal-item"><i class="fas fa-dollar-sign"></i> Financing Options</div>
+</div>
+</div>
+<!-- Services Grid -->
+<section class="services-grid-section section-padding">
+<div class="container">
+<h2>Our Full Range of Plumbing Services Across Moreno Valley</h2>
+<p class="section-intro">From quick <a href="https://plumbermorenovalleyca.com/services/toilet-installation-repair-replacement/">toilet repairs</a> in Sunnymead Ranch to complex <a href="https://plumbermorenovalleyca.com/services/sewer-line-installation-repair-replacement/">trenchless sewer replacements</a> in Moreno Valley Ranch, our licensed technicians deliver permanent solutions — not temporary fixes. Browse all 24 services below.</p>
+<div class="services-grid">
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/bathroom-remodel/">
+<i class="fas fa-bath"></i><span>Bathroom Remodel</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/bathtub-repair-replacement/">
+<i class="fas fa-shower"></i><span>Bathtub Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/boiler-installation-repair-replacement/">
+<i class="fas fa-fire"></i><span>Boiler Installation, Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/backflow-testing-repair-replacement/">
+<i class="fas fa-shield-alt"></i><span>Backflow Testing Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/drain-cleaning/">
+<i class="fas fa-sink"></i><span>Drain Cleaning</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/emergency-plumber/">
+<i class="fas fa-ambulance"></i><span>Emergency Plumber</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/faucets-sinks-repair-replacement/">
+<i class="fas fa-faucet"></i><span>Faucets &amp; Sinks Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/gas-line-installation-repair-replacement/">
+<i class="fas fa-burn"></i><span>Gas Line Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/garbage-disposal/">
+<i class="fas fa-trash"></i><span>Garbage Disposal Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/hydro-jetting/">
+<i class="fas fa-spray-can"></i><span>Hydro Jetting</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/pipe-repair-replacement/">
+<i class="fas fa-wrench"></i><span>Pipe Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/slab-leak-detection/">
+<i class="fas fa-search"></i><span>Slab Leak Detection</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/septic-tank-pumping/">
+<i class="fas fa-recycle"></i><span>Septic Tank Pumping</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/sewer-camera-inspection/">
+<i class="fas fa-video"></i><span>Sewer Camera Inspection</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/sump-pump-repair-replacement/">
+<i class="fas fa-water"></i><span>Sump Pump Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/sewer-line-installation-repair-replacement/">
+<i class="fas fa-road"></i><span>Sewer Line Installation, Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/shower-repair-replacement/">
+<i class="fas fa-shower"></i><span>Shower Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/toilet-installation-repair-replacement/">
+<i class="fas fa-toilet"></i><span>Toilet Installation, Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/water-leak-detection/">
+<i class="fas fa-tint"></i><span>Water Leak Detection</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/water-heater-repair-replacement/">
+<i class="fas fa-temperature-high"></i><span>Water Heater Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/water-line-repair/">
+<i class="fas fa-arrows-alt-h"></i><span>Water Line Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/water-damage-restoration/">
+<i class="fas fa-house-damage"></i><span>Water Damage Restoration</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/water-filtration-repair-replacement/">
+<i class="fas fa-filter"></i><span>Water Filtration Repair &amp; Replacement</span>
+</a>
+</div>
+<div class="service-card">
+<a href="https://plumbermorenovalleyca.com/services/water-softener-repair-replacement/">
+<i class="fas fa-hand-holding-water"></i><span>Water Softener Repair &amp; Replacement</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Highlight Cards -->
+<section class="highlight-section section-padding">
+<div class="container">
+<h2>What Makes Pure Valley Plumbing the Right Choice in Moreno Valley</h2>
+<p class="section-intro">With 41 years of Inland Empire experience, five national awards, and a team holding credentials most local plumbers simply do not carry, here is what genuinely separates us from the alternatives across Riverside County.</p>
+<div class="highlight-grid">
+<div class="highlight-card">
+<div class="hl-icon-wrap">
+<div class="hl-icon"><i class="fas fa-map-marked-alt"></i></div>
+<h3>Unmatched Local Knowledge</h3>
+</div>
+<p>Operating in Moreno Valley since 1984 means we understand the specific plumbing challenges of local soil conditions, hard water chemistry, aging infrastructure in neighborhoods like Sunnymead and Edgemont, and the seasonal stress patterns that cause most local <a href="https://plumbermorenovalleyca.com/services/slab-leak-detection/">slab leaks</a>. That local experience leads to faster diagnosis and repairs that last longer against actual local conditions.</p>
+</div>
+<div class="highlight-card">
+<div class="hl-icon-wrap">
+<div class="hl-icon"><i class="fas fa-certificate"></i></div>
+<h3>Six Verified Credentials</h3>
+</div>
+<p>Our technicians hold the California C-36 license, Backflow Prevention Certification, Medical Gas Certification (ASSE 6010) for healthcare facilities near <a href="https://plumbermorenovalleyca.com/service-areas/loma-linda/">Loma Linda</a>, EPA Lead-Safe Certification, and Certified Plumbing Designer (CPD) credentials. These qualifications open doors to residential, commercial, and specialty jobs that most Inland Empire plumbers cannot legally accept.</p>
+</div>
+<div class="highlight-card">
+<div class="hl-icon-wrap">
+<div class="hl-icon"><i class="fas fa-trophy"></i></div>
+<h3>Five National Industry Awards</h3>
+</div>
+<p>Our award portfolio includes the PHCC of California Contractor of the Year, ABC Excellence in Construction Award, Delta Faucet Plumbing Contractor of the Year, ENR California Top Specialty Contractor ranking, and the ABC Gold STEP Safety Award. These are independently judged recognitions — not paid certifications — and they reflect consistent, verifiable quality over many years of work. Learn more on our <a href="https://plumbermorenovalleyca.com/about/">About page</a>.</p>
+</div>
+<div class="highlight-card">
+<div class="hl-icon-wrap">
+<div class="hl-icon"><i class="fas fa-tools"></i></div>
+<h3>Technology-Driven Diagnostics</h3>
+</div>
+<p>We invest in the technology that protects your property. Electronic acoustic listening devices locate leaks without tearing up floors. <a href="https://plumbermorenovalleyca.com/services/sewer-camera-inspection/">Video sewer cameras</a> confirm exactly what is happening inside your pipes before we recommend any repair. Trenchless sewer technology replaces failed <a href="https://plumbermorenovalleyca.com/services/sewer-line-installation-repair-replacement/">sewer lines</a> without digging across your yard or driveway.</p>
+</div>
+<div class="highlight-card">
+<div class="hl-icon-wrap">
+<div class="hl-icon"><i class="fas fa-hand-holding-usd"></i></div>
+<h3>Transparent Pricing &amp; Real Financing</h3>
+</div>
+<p>You receive a detailed written estimate covering all costs and warranty terms before we start any work. No surprise charges appear on the final invoice. For larger projects such as <a href="https://plumbermorenovalleyca.com/services/pipe-repair-replacement/">full repiping</a>, <a href="https://plumbermorenovalleyca.com/services/bathroom-remodel/">bathroom remodels</a>, or sewer line installations, flexible financing plans let you proceed without delaying needed repairs due to budget constraints.</p>
+</div>
+<div class="highlight-card">
+<div class="hl-icon-wrap">
+<div class="hl-icon"><i class="fas fa-people-carry"></i></div>
+<h3>Community-Rooted Values</h3>
+</div>
+<p>We live and work in this community. Active military, veterans — especially those near <a href="https://plumbermorenovalleyca.com/service-areas/march-air-reserve-base/">March Air Reserve Base</a> — and seniors each receive a 10% service discount. Our five-van fleet is staffed by local technicians, not traveling contractors. When you call us, you are calling your neighbor — and we treat every property we enter with that level of care and respect.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Areas -->
+<section class="areas-section section-padding">
+<div class="container">
+<h2>Plumbing Service Areas — Moreno Valley &amp; Riverside County</h2>
+<p class="section-intro">Our dispatch base covers Moreno Valley ZIP codes 92551 through 92556 and our five-van fleet extends throughout Riverside County into San Bernardino County. Click your community for local plumbing service details.</p>
+<div class="areas-grid">
+<a href="https://plumbermorenovalleyca.com/service-areas/march-air-reserve-base/" class="area-pill"><i class="fas fa-map-marker-alt"></i>March Air Reserve Base</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/loma-linda/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Loma Linda</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/highgrove/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Highgrove</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/mead-valley/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Mead Valley</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/grand-terrace/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Grand Terrace</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/woodcrest/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Woodcrest</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/redlands/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Redlands</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/riverside/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Riverside</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/san-bernardino/" class="area-pill"><i class="fas fa-map-marker-alt"></i>San Bernardino</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/perris/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Perris</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/lakeview/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Lakeview</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/colton/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Colton</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/nuevo/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Nuevo</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/mentone/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Mentone</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/calimesa/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Calimesa</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/rubidoux/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Rubidoux</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/good-hope/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Good Hope</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/yucaipa/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Yucaipa</a>
+<a href="https://plumbermorenovalleyca.com/service-areas/sunnyslope/" class="area-pill"><i class="fas fa-map-marker-alt"></i>Sunnyslope</a>
+</div>
+</div>
+</section>
+<!-- Urgency Banner -->
+<section class="urgency-banner section-padding">
+<div class="container">
+<h2><i class="fas fa-phone-volume"></i> Available Day &amp; Night — Including Weekends &amp; Holidays</h2>
+<p>Pipe bursts do not follow business hours. Sewer backups do not wait for Monday morning. That is why Pure Valley Plumbing operates with genuine around-the-clock availability — five fully equipped vans, real local dispatchers, and a guaranteed 60-minute emergency arrival across all Moreno Valley ZIP codes.</p>
+<div class="urgency-counter-row">
+<div class="urgency-block">
+<span class="u-val">24</span>
+<span class="u-label">Hours a Day</span>
+</div>
+<div class="urgency-block">
+<span class="u-val">365</span>
+<span class="u-label">Days a Year</span>
+</div>
+<div class="urgency-block">
+<span class="u-val">5</span>
+<span class="u-label">Service Vans</span>
+</div>
+<div class="urgency-block">
+<span class="u-val">60</span>
+<span class="u-label">Min Response</span>
+</div>
+</div>
+<a href="tel:+19515566555" class="btn"><i class="fas fa-phone"></i> Call (951) 556-6555 — We Answer Now</a>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="faq-section section-padding">
+<div class="container">
+<h2>Moreno Valley Plumbing — Frequently Asked Questions</h2>
+<p class="section-intro">These are the questions our customers ask most before scheduling service. For anything not covered, call <a href="tel:+19515566555" style="color:#0066CC;font-weight:700;">(951) 556-6555</a> or visit our <a href="https://plumbermorenovalleyca.com/contact/" style="color:#0066CC;font-weight:700;">contact page</a>.</p>
+<div class="faq-list">
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span>Which neighborhoods in Moreno Valley do you service most frequently?</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="faq-answer">
+<p>We receive calls from across the entire city — from Towngate and Sunnymead Ranch in the north to Rancho Belago, Moreno Valley Ranch, and Chaparral Hills further east. We also regularly serve Edgemont, Midland, Bear Valley, and Hidden Springs. Our vans cover all six Moreno Valley ZIP codes — 92551, 92552, 92553, 92554, 92555, and 92556 — every day. Our local knowledge of each neighborhood's infrastructure age and soil conditions helps us diagnose plumbing problems faster than any out-of-area competitor. Visit our <a href="https://plumbermorenovalleyca.com/common-plumbing-issues-in-moreno-valley-and-how-to-fix-them/">common plumbing issues guide</a> for neighborhood-specific insights.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span>Can you handle both residential and commercial plumbing in Riverside County?</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="faq-answer">
+<p>Yes — and we handle both with equal capability. On the residential side, we serve everything from minor repairs in single-family homes to full <a href="https://plumbermorenovalleyca.com/services/bathroom-remodel/">bathroom remodels</a> and whole-house repiping. On the commercial side, we manage multi-unit properties, HOA accounts, restaurants requiring <a href="https://plumbermorenovalleyca.com/services/hydro-jetting/">hydro jetting</a> programs, retail centers, office buildings, and healthcare facilities near <a href="https://plumbermorenovalleyca.com/service-areas/loma-linda/">Loma Linda</a>. Our ASSE 6010 Medical Gas Certification qualifies us for work that most plumbing companies cannot legally perform. Contact us through our <a href="https://plumbermorenovalleyca.com/contact/">contact page</a> to discuss a commercial service agreement.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span>How long does a water heater replacement typically take?</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="faq-answer">
+<p>A standard tank water heater swap-out typically takes two to four hours, including shutting off water and gas supply, draining and disconnecting the old unit, installing and connecting the new heater, testing all connections, and confirming proper temperature and pressure relief valve operation. Tankless water heater installations generally take longer — typically four to six hours — due to venting modifications and gas line sizing requirements. We always confirm hot water is flowing correctly and the installation meets California code before we leave. Explore your full options on our <a href="https://plumbermorenovalleyca.com/services/water-heater-repair-replacement/">water heater service page</a>.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span>What payment methods does Pure Valley Plumbing accept?</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="faq-answer">
+<p>We accept cash, personal and business checks, Visa, MasterCard, American Express, and Discover. For larger plumbing projects including full <a href="https://plumbermorenovalleyca.com/services/sewer-line-installation-repair-replacement/">sewer line replacements</a>, <a href="https://plumbermorenovalleyca.com/services/pipe-repair-replacement/">whole-house repiping</a>, and extensive <a href="https://plumbermorenovalleyca.com/services/bathroom-remodel/">bathroom remodels</a>, we offer flexible financing plans that let you begin necessary work immediately while spreading the cost over manageable monthly payments. Ask our dispatcher about current financing terms when you schedule your service call.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span>Why is there a sulfur or rotten-egg smell coming from my bathroom drain?</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="faq-answer">
+<p>A sulfur smell from a drain is almost always caused by hydrogen sulfide gas rising up through the plumbing — most commonly due to a dry P-trap that has evaporated (common in guest bathrooms not regularly used), biofilm buildup inside the drain from organic debris, a cracked or deteriorating wax ring beneath the toilet, or a blocked or partially collapsed vent pipe that is failing to properly exhaust sewer gas. Running water regularly in unused drains and occasional <a href="https://plumbermorenovalleyca.com/services/drain-cleaning/">drain cleaning</a> addresses most cases. If the smell persists after refilling the P-trap, call us — a <a href="https://plumbermorenovalleyca.com/services/sewer-camera-inspection/">sewer camera inspection</a> will quickly identify the source.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button">
+<span>Is Pure Valley Plumbing hiring plumbers in the Moreno Valley area?</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="faq-answer">
+<p>We are always open to connecting with motivated, experienced plumbing professionals who want to join an award-winning team in the Inland Empire. We offer competitive pay, year-round steady work across residential and commercial accounts, and a documented safety culture recognized by our ABC Gold STEP Award. Both licensed journeymen and apprentices are welcome to apply. Visit our <a href="https://plumbermorenovalleyca.com/careers-plumbing-jobs/">plumbing careers page</a> to view current openings and submit an application — we respond to all inquiries promptly.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="contact-cta-section section-padding">
+<div class="container">
+<div class="contact-cta-grid">
+<div class="contact-cta-content">
+<h2>Moreno Valley's Trusted Plumbing Team Is Waiting for Your Call</h2>
+<p>Whether your issue is urgent or you are simply planning ahead, Pure Valley Plumbing delivers the same commitment every time — fast arrival, honest assessment, written pricing, and warranted work. Reach us now by phone or form and our local team will respond immediately.</p>
+<ul class="contact-details-list">
+<li><i class="fas fa-phone"></i><a href="tel:+19515566555">(951) 556-6555</a></li>
+<li><i class="fas fa-envelope"></i><a href="mailto:plumbermorenovalleyca@gmail.com">plumbermorenovalleyca@gmail.com</a></li>
+<li><i class="fas fa-map-marker-alt"></i><span>27130 Eucalyptus Ave, Moreno Valley, CA 92555</span></li>
+<li><i class="fas fa-clock"></i><span>Open 24/7 — Emergency Service Guaranteed</span></li>
+</ul>
+<a href="tel:+19515566555" class="btn"><i class="fas fa-phone"></i> Call Now</a>
+</div>
+<div class="contact-cta-form">
+<h3>Submit Your Service Request</h3>
+<iframe src="https://leads.leadsmartinc.com/?api_key=eb7353a561f876a7c03543787a0cd05ac8a926d3&affiliate_source=2mhnfdbill1&funnel=3&category=1&step=1&buttons=btn-danger" title="Submit Plumbing Request — Pure Valley Plumbing Moreno Valley" loading="lazy"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="pvp-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+<div class="footer-logo-img">
+<img src="https://i.postimg.cc/jdFtLb2b/PURE-VALLEY-PLUMBING-LOGO.webp" alt="Pure Valley Plumbing Logo" width="140" height="55" loading="lazy">
+</div>
+<p>Pure Valley Plumbing is a nationally award-winning, C-36 licensed plumbing contractor serving Moreno Valley and the Inland Empire since 1984. Founded by Cory Lukach, our team provides 24/7 residential and commercial plumbing with a 12-month warranty on every job — across Riverside County and San Bernardino County.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul class="footer-links">
+<li><a href="https://plumbermorenovalleyca.com/">Home</a></li>
+<li><a href="https://plumbermorenovalleyca.com/about/">About Us</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/">All Services</a></li>
+<li><a href="https://plumbermorenovalleyca.com/service-areas/">Service Areas</a></li>
+<li><a href="https://plumbermorenovalleyca.com/blog/">Blog</a></li>
+<li><a href="https://plumbermorenovalleyca.com/contact/">Contact Us</a></li>
+<li><a href="https://plumbermorenovalleyca.com/careers-plumbing-jobs/">Careers</a></li>
+<li><a href="https://plumbermorenovalleyca.com/privacy-policy/">Privacy Policy</a></li>
+<li><a href="https://plumbermorenovalleyca.com/disclaimer/">Disclaimer</a></li>
+<li><a href="https://plumbermorenovalleyca.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Top Services</h3>
+<ul class="footer-links">
+<li><a href="https://plumbermorenovalleyca.com/services/emergency-plumber/">Emergency Plumber</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-heater-repair-replacement/">Water Heater Repair</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/slab-leak-detection/">Slab Leak Detection</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/drain-cleaning/">Drain Cleaning</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/sewer-camera-inspection/">Sewer Camera Inspection</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/water-softener-repair-replacement/">Water Softener Service</a></li>
+<li><a href="https://plumbermorenovalleyca.com/services/gas-line-installation-repair-replacement/">Gas Line Repair</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Contact Info</h3>
+<address class="footer-contact">
+<p><i class="fas fa-map-marker-alt"></i><span>27130 Eucalyptus Ave, Moreno Valley, CA 92555</span></p>
+<p><i class="fas fa-envelope"></i><a href="mailto:plumbermorenovalleyca@gmail.com">plumbermorenovalleyca@gmail.com</a></p>
+<p><i class="fas fa-phone"></i><a href="tel:+19515566555">(951) 556-6555</a></p>
+<p><i class="fas fa-clock"></i><span>Open 24/7 — Emergency Plumbing Always Ready</span></p>
+</address>
+</div>
+</div>
+<div class="copyright">
+<p>&copy; 2025 Pure Valley Plumbing. All Rights Reserved. C-36 Licensed Plumbing Contractor — Moreno Valley, CA 92555. Founded 1984 by Cory Lukach. Serving Riverside County &amp; the Inland Empire.</p>
+</div>
+</div>
+</footer>
+<!-- Mobile Call Button -->
+<a href="tel:+19515566555" class="mobile-call-btn" aria-label="Call Pure Valley Plumbing Now">
+<i class="fas fa-phone"></i>
+<span>Call Now: (951) 556-6555</span>
+</a>
+</div>
+<!-- End .pvp-page -->
+<script>
+(function () {
+'use strict';
+document.addEventListener('DOMContentLoaded', function () {
+/* ---- Popup ---- */
+var popup = document.getElementById('pvpPopup');
+var popupClose = document.getElementById('pvpPopupClose');
+if (popup && !sessionStorage.getItem('pvpPopupShown')) {
+setTimeout(function () {
+popup.classList.add('active');
+sessionStorage.setItem('pvpPopupShown', '1');
+}, 5000);
+}
+if (popupClose) {
+popupClose.addEventListener('click', function (e) {
+e.preventDefault();
+e.stopPropagation();
+popup.classList.remove('active');
+});
+}
+if (popup) {
+popup.addEventListener('click', function (e) {
+if (e.target === popup) { popup.classList.remove('active'); }
+});
+}
+document.addEventListener('keydown', function (e) {
+if (e.key === 'Escape' && popup) { popup.classList.remove('active'); }
+});
+/* ---- Mobile Navigation ---- */
+var toggle = document.getElementById('pvpMobileToggle');
+var menu = document.getElementById('pvpNavMenu');
+if (toggle && menu) {
+toggle.addEventListener('click', function (e) {
+e.preventDefault();
+menu.classList.toggle('active');
+var icon = this.querySelector('i');
+var isOpen = icon && icon.classList.contains('fa-times');
+if (icon) {
+icon.classList.toggle('fa-bars', isOpen);
+icon.classList.toggle('fa-times', !isOpen);
+}
+});
+}
+/* ---- Dropdown Toggles (mobile only) ---- */
+var triggers = document.querySelectorAll('.pvp-page .dropdown-trigger > a');
+triggers.forEach(function (link) {
+link.addEventListener('click', function (e) {
+if (window.innerWidth < 992) {
+e.preventDefault();
+var parent = this.parentElement;
+document.querySelectorAll('.pvp-page .dropdown-trigger').forEach(function (item) {
+if (item !== parent) { item.classList.remove('active-dropdown'); }
+});
+parent.classList.toggle('active-dropdown');
+}
+});
+});
+/* ---- FAQ Accordion ---- */
+var faqBtns = document.querySelectorAll('.pvp-page .faq-question');
+faqBtns.forEach(function (btn) {
+btn.addEventListener('click', function () {
+var item = this.parentElement;
+var isActive = item.classList.contains('active');
+document.querySelectorAll('.pvp-page .faq-item').forEach(function (el) {
+el.classList.remove('active');
+});
+if (!isActive) { item.classList.add('active'); }
+});
+});
+});
+}());
+</script>
